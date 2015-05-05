@@ -83,3 +83,12 @@ library
 source-repository head
   type:     git
   location: https://github.com/cartazio/arithmoi
+
+test-suite examples
+  hs-source-dirs:      test-suite
+  main-is:             DocTest.hs
+  type:                exitcode-stdio-1.0
+  build-depends:       base
+                     , Glob    ==0.7.*
+                     , doctest ==0.9.*
+
